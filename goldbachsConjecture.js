@@ -41,11 +41,11 @@ function isPrime(n) {
     return false;
   }
 
+
   var squareroot = Math.sqrt(n);
 
-  for (var potentialDivisor = 2; potentialDivisor < squareroot; potentialDivisor++) {
-
-    if (n % potentialDivisor === 0) {
+  for (var i = 2; i < squareroot; i++) {
+   if (n % i === 0) {
       return false;
     }
   }
