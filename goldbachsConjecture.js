@@ -41,7 +41,9 @@ function isPrime(n) {
     return false;
   }
 
-  for (var potentialDivisor = 2; potentialDivisor < n; potentialDivisor++) {
+  var squareroot = Math.sqrt(n);
+
+  for (var potentialDivisor = 2; potentialDivisor < squareroot; potentialDivisor++) {
 
     if (n % potentialDivisor === 0) {
       return false;
